@@ -71,7 +71,7 @@ class Mailinglist(webapp2.RequestHandler):
     cResponse = urllib.urlopen(captchaUrl,data)
     print remoteip
     verf =  cResponse.read()
-    if "true" in verf and 'chutiya' not in self.request.get('stuname') and 'Chutiya' not in self.request.get('stuname'):
+    if "true" in verf:
         greeting = Greeting(parent=mailinglist_key)
         greeting.student = self.request.get('stuname')
         greeting.address = self.request.get('stumail')
@@ -106,7 +106,7 @@ class CronTask(webapp2.RequestHandler):
         #status2 = resp2.status_code
 
         print status
-        print status2
+        #print status2
         #and then check the response...
         if (status == 404 or status == 500):
           print 'Convocation Server is down!'
