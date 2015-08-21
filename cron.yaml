@@ -1,0 +1,4 @@
+cron:
+#- description: Ping the server
+#  url: /crontask
+#  schedule: every 10 hours
