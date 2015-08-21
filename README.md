@@ -22,4 +22,4 @@
 <li>You cannot send more than 100 emails a day via gmail. Also, you can be easily marked as a spammer for bulk mails. So use OFFSET, LIMIT and you judgement as to how you will handle sending over 100 mails, whether multiple IDs, breaking the emailing list into parts, etc. </li>
 </ul>
 
-For any more information, contact me <a href="twitter.com/theRonnicle" target="_blank"><h6>@theRonnicle</h6></a>
+For any more information, contact me <a href="www.twitter.com/theRonnicle" target="_blank"><h6>@theRonnicle</h6></a>
