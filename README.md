@@ -13,8 +13,8 @@
 <li>How to implement reCAPTCHA using python. The packages you will find online are quite redundant. You just need to send a POST request with certain parameters to google's verification. </li>
 <li>Schedule tasks using cron on Google App Engine.</li>
 <li>How to check the status of a URL using HTTP requests, since GAE doesn't support ICMP or telnet.</li>
-<li>How to automate emails through you web application<li>
+<li>How to automate emails through you web application</li>
 </ul>
 
 
-<h5>For any more information, contact me @theRonnicle</h5>
+For any more information, contact me <h5>@theRonnicle</h5>
