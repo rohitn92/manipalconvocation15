@@ -22,4 +22,21 @@
 <li>You cannot send more than 100 emails a day via gmail. Also, you can be easily marked as a spammer for bulk mails. So use OFFSET, LIMIT and you judgement as to how you will handle sending over 100 mails, whether multiple IDs, breaking the emailing list into parts, etc. </li>
 </ul>
 
+<h4>MORE NOTES</h4>
+App Engine does not have ICMP or Telnet Support. That is the reason we are using Requests library for its http request API call for external host communication. 
+
+For a normal python script, something like the following would have worked as well - 
+
+```python
+cmd=shlex.split("ping -n 1 convocation.manipal.edu/registration/startup.aspx")
+try:
+   output = subprocess.check_output(cmd)
+except subprocess.CalledProcessError,e:
+   #Will print the command failed with its exit status
+   print "The IP {0} is NotReacahble".format(cmd[-1])
+
+else:
+  print "The IP {0} is Reachable".format(cmd[-1])
+```
+
 For any more information, contact me <a href="http://www.twitter.com/theRonnicle" target="_blank"><h6>@theRonnicle</h6></a>
